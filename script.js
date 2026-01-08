@@ -1,0 +1,1 @@
+function greetingTime(){const h=new Date().getHours();document.getElementById("greeting").innerHTML=h<12?"Selamat Pagi":h<15?"Selamat Siang":h<18?"Selamat Sore":"Selamat Malam";}
