@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produk — PT Nutribite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PT Nutribite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu3">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5 page animated-bg">
+    <div class="bg-shape banana"></div>
+    <div class="bg-shape choco"></div>
+    <div class="container">
+      <h1>Produk & Varian</h1>
+      <p class="lead">Pilihan cookies dari PT Nutribite — cocok untuk cemilan, oleh-oleh, dan acara spesial.</p>
+
+      <div class="row g-4 mt-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/redvelvet.jpeg" class="card-img-top" alt="cookies nutribite">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">cookies nutribite</h5>
+              <p class="card-text scroll-animate">cookies pilihan dengan rasa redvelvet. Rasa klasik dengan tekstur lembut .</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/matcha.jpeg" class="card-img-top" alt="Matcha">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">Matcha</h5>
+              <p class="card-text scroll-animate">Cookkies matcha premium, memberikan sentuhan pahit-manis yang modern dan populer di kalangan anak muda.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/strowberi.jpeg" class="card-img-top" alt="strowberi">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">strowberi</h5>
+              <p class="card-text scroll-animate">strowberi lembut dan sentuhan sedikit cokelat yang menghadirkan rasa kontras manis-gurih yang nikkmat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/cokochip.jpeg" class="card-img-top" alt="chokochip">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">chokochip</h5>
+              <p class="card-text scroll-animate">Varian dengan chokochip — favorit untuk hadiah atau acara khusus.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/taro.jpeg" class="card-img-top" alt="Taro">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">cookies Taro</h5>
+              <p class="card-text scroll-animate">Cokelat + taro manis yang meleleh; kombinasi creamy dan gurih yang enak.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 scroll-animate">
+            <img src="image/pandan.jpeg" class="card-img-top" alt="cookies pandan">
+            <div class="card-body">
+              <h5 class="card-title scroll-animate">rasa pandan</h5>
+              <p class="card-text sc"> rasa yang unik.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="page-nav scroll-animate">
+        <a href="about.html" class="page-nav-btn prev">← Tentang Kami</a>
+        <a href="gallery.html" class="page-nav-btn next">Galeri →</a>
+      </div>
+    </div>
+    
+    
+  </main>
+
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex justify-content-between">
+      <div>© <span id="year3"></span> PT NutriBite</div>
+      <div><a href="contact.html" class="text-white">Kontak</a></div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+  
+        if (
+          href.startsWith('#') ||
+          href.startsWith('http') ||
+          href.startsWith('mailto') ||
+          href.startsWith('https://wa.me')
+        ) return;
+  
+        e.preventDefault();
+        document.querySelector('.page').classList.add('page-exit');
+  
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      });
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+  
+        if (
+          href.startsWith('#') ||
+          href.startsWith('http') ||
+          href.startsWith('mailto') ||
+          href.startsWith('https://wa.me')
+        ) return;
+  
+        e.preventDefault();
+        document.querySelector('.page').classList.add('page-exit');
+  
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      });
+    });
+  </script>
+  
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+  
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+  
+</body>
+</html>

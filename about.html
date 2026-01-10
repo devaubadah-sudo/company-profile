@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang Kami — PT Nutribite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="animated-bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PT NutriBite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5 page">
+    <div class="container">
+  
+      <!-- JUDUL -->
+      <div class="text-center mb-5 scroll-animate">
+        <h1 class="fw-bold">Tentang PT Nutribite</h1>
+        <p class="lead">
+          PT Nutribite adalah perusahaan makanan berbasis UMKM yang mengolah Makanan cemilan tinggi protein buat masyarakat yang suka ber olahraga,karena biasanya orang suka oalhraga dan hobi nyemil
+           kadang binggung untuk memilih cemilan,
+           karena rata rata cemilan sekarang tinggi gula,
+           nah maka dari itu nutribite di buat.
+        </p>
+      </div>
+  
+      <!-- SEJARAH -->
+      <section class="mb-5 scroll-animate">
+        <div class="card p-4">
+          <h3 class="mb-3">Sejarah Singkat</h3>
+          <p class="mb-0">
+           NutriBite lahir dari pengamatan terhadap tingginya minat masyarakat pada makanan sehat,
+            sementara pilihan cookies sehat di pasaran masih terbatas dan mahal.
+             Oleh karena itu, NutriBite dikembangkan sebagai cookies tinggi protein dan rendah gula dengan harga yang lebih terjangkau.
+          </p>
+        </div>
+      </section>
+  
+      <!-- VISI & MISI -->
+      <section class="row g-4 mb-5">
+        <div class="col-md-6 scroll-animate">
+          <div class="card h-100 p-4">
+            <h3 class="mb-3">Visi</h3>
+            <p class="mb-0">
+              Menjadi brand cookies sehat lokal yang dipercaya masyarakat sebagai camilan lezat, bergizi,
+               dan mendukung gaya hidup sehat.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 scroll-animate">
+          <div class="card h-100 p-4">
+            <h3 class="mb-3">Misi</h3>
+            <ul class="mb-0">
+              <li>Menghadirkan cookies tinggi protein dan rendah gula dengan rasa yang tetap lezat.</li>
+              <li>Menggunakan bahan alami dan aman untuk dikonsumsi sehari hari.</li>
+              <li>Menawarkan produk dengan harga terjangkau bagi mahasiswa dan pekerja muda.</li>
+              <li>Mendukung gaya hidup sehat dan aktif melalui cemilan yang lebih baik.</li>
+              <li>mengembangkan produk lokal yang berdaya saing di pasar makanan sehat.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <!-- NILAI PERUSAHAAN -->
+      <section class="scroll-animate">
+        <div class="card p-4">
+          <h3 class="mb-3">Nilai Perusahaan</h3>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <strong>Kualitas</strong>
+              <p class="small mb-0">Bahan terbaik & kontrol mutu.</p>
+            </div>
+            <div class="col-md-3">
+              <strong>Inovasi</strong>
+              <p class="small mb-0">Rasa baru yang relevan.</p>
+            </div>
+            <div class="col-md-3">
+              <strong>Keberlanjutan</strong>
+              <p class="small mb-0">Kemitraan & pengemasan bijak.</p>
+            </div>
+            <div class="col-md-3">
+              <strong>Kepercayaan</strong>
+              <p class="small mb-0">Pelayanan ramah & tepat waktu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+    <div class="container my-5">
+      <div class="page-nav scroll-animate">
+        <a href="index.html" class="page-nav-btn prev">
+          ← Beranda
+        </a>
+    
+        <a href="services.html" class="page-nav-btn next">
+          Produk →
+        </a>
+      </div>
+    </div>
+    
+    
+  </main>
+  
+
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex justify-content-between">
+      <div>© <span id="year2"></span> PT Nutribite</div>
+      <div><a href="contact.html" class="text-white">Kontak</a></div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script>
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+  
+        if (
+          href.startsWith('#') ||
+          href.startsWith('http') ||
+          href.startsWith('mailto') ||
+          href.startsWith('https://wa.me')
+        ) return;
+  
+        e.preventDefault();
+        document.querySelector('.page').classList.add('page-exit');
+  
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      });
+    });
+  </script>
+  
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+  
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+  
+</body>
+</html>
